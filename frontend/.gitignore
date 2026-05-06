@@ -29,3 +29,6 @@ npm-debug.log*
 .eslintcache
 .vercel
 .env*.local
+
+# TypeScript build info
+tsconfig.tsbuildinfo

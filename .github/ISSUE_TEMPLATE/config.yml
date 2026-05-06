@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security issue
+    url: https://github.com/Yaogui415/newsflow-oss/security/policy
+    about: Please report security issues privately instead of opening a public issue.

@@ -1,5 +1,9 @@
 # NewsFlow
 
+[![CI](https://github.com/Yaogui415/newsflow-oss/actions/workflows/ci.yml/badge.svg)](https://github.com/Yaogui415/newsflow-oss/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+![Status: Prototype](https://img.shields.io/badge/status-prototype-0ea5e9)
+
 ![NewsFlow icon](./image/newsflow-icon.svg)
 
 > AI-assisted newsroom workflow for event tracking, evidence organization, approval chains, correction handling, and post-publication monitoring.
@@ -56,9 +60,11 @@ It is built around a simple belief:
 
 - `CONTRIBUTING.md` — contribution guide and development expectations
 - `SECURITY.md` — responsible disclosure and sensitive-data boundaries
+- `CODE_OF_CONDUCT.md` — collaboration expectations for contributors
 - `docs/OPEN_SOURCE_GUIDE.md` — GitHub positioning, topics, and publishing checklist
 - `docs/GITHUB_ABOUT.md` — ready-to-use repository description and About copy
 - `docs/RELEASE_v0.1.0.md` — first public release notes and announcement copy
+- `docs/SELF_HOSTING.md` — local and self-hosted setup guide
 - `backend/.env.example` — backend environment example
 - `frontend/.env.example` — frontend environment example
 
@@ -140,6 +146,14 @@ newsflow/
 - explicit human gates
 
 ## Quick start
+
+### Prerequisites
+
+- Python `3.12` or `3.13` recommended for backend setup
+- Node.js `20.19+` recommended for frontend setup
+- Docker and Docker Compose for local infrastructure
+
+Note: Python `3.14` is not yet recommended here because some native dependencies such as `orjson` may fail to build depending on your environment.
 
 ### 1. Start infrastructure
 
@@ -240,7 +254,7 @@ npm run dev
 - [x] sign-off center and human override support
 - [x] post-publication monitoring and correction loop
 - [x] open-source packaging and self-hosting setup
-- [ ] more complete self-hosting docs
+- [x] more complete self-hosting docs
 - [ ] finer-grained evidence anchors and citation mapping
 - [ ] stronger permissions, metrics, and long-term memory governance
 
@@ -250,6 +264,16 @@ npm run dev
 - `docs/OPEN_SOURCE_GUIDE.md` — open-source packaging notes
 - `docs/GITHUB_ABOUT.md` — repository description and public-facing copy
 - `docs/RELEASE_v0.1.0.md` — first public release notes
+- `docs/SELF_HOSTING.md` — self-hosting and deployment guidance
+
+## Maintainer notes
+
+If you want this repository to feel complete on GitHub, the next good steps are:
+
+- upload `image/newsflow-social-preview.svg` as the GitHub social preview image
+- copy the text from `docs/GITHUB_ABOUT.md` into the repository About section
+- publish a first Release using `docs/RELEASE_v0.1.0.md`
+- follow `docs/REPO_MAINTENANCE_CHECKLIST.md` for branch protection, issue hygiene, and release upkeep
 
 ## License
 
