@@ -3,12 +3,6 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/api/*"
-  to = "https://newsflow-api-2cd4.onrender.com/api/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

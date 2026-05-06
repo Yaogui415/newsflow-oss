@@ -61,10 +61,12 @@ Recommended local values:
 cp frontend/.env.example frontend/.env.local
 ```
 
-Default local API target:
+Default local API targets:
 
 ```env
 VITE_API_BASE_URL=http://localhost:8000/api/v1
+VITE_BACKEND_DIRECT_URL=http://localhost:8000/api/v1
+VITE_BACKEND_HEALTH_URL=http://localhost:8000/health
 ```
 
 ### 4. Start the backend
@@ -157,7 +159,7 @@ The frontend is easiest to deploy on:
 - Netlify
 - any static hosting service that supports SPA routing
 
-Make sure `VITE_API_BASE_URL` points to your backend.
+Make sure `VITE_API_BASE_URL`, `VITE_BACKEND_DIRECT_URL`, and `VITE_BACKEND_HEALTH_URL` point to your backend.
 
 ### Backend
 
@@ -186,7 +188,7 @@ If you self-host NewsFlow, do not use public or demo environments for:
 Check:
 
 - backend is running on port `8000`
-- `frontend/.env.local` has the correct `VITE_API_BASE_URL`
+- `frontend/.env.local` has the correct `VITE_API_BASE_URL`, `VITE_BACKEND_DIRECT_URL`, and `VITE_BACKEND_HEALTH_URL`
 - backend CORS settings allow your local frontend origin
 
 ### Backend starts but some features fail

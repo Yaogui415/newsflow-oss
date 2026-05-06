@@ -1,45 +1,99 @@
-# NewsFlow OSS v0.1.0
+# NewsFlow OSS v0.1.0 — Initial public release
 
-Initial public release of NewsFlow as an open-source newsroom workflow prototype.
+NewsFlow is now available as an open-source project.
 
-## What this release includes
+This first public release introduces NewsFlow as a full-stack newsroom workflow prototype for event tracking, evidence organization, approval chains, correction handling, and post-publication monitoring.
 
-- full-stack codebase with FastAPI backend and React frontend
-- event-centered object model built around `EventCase` and `StoryPacket`
-- workflow stages across intake, cognition, governance, production, and post-publish follow-up
-- sign-off center with decision logging and human review checkpoints
-- self-hosting-friendly environment examples and open-source documentation
+## Why this project matters
 
-## What NewsFlow is trying to explore
+Many AI tools for journalism focus on the final text: drafting, rewriting, summarizing, or adapting a story for different channels. NewsFlow starts from a different question:
 
-NewsFlow explores a different role for AI in journalism. Instead of asking whether AI can replace writers, it asks how AI can help structure the middle of a high-responsibility workflow without weakening judgment, accountability, or the public role of editorial work.
+How can AI support the parts of journalism that happen before and after the article itself?
 
-## Current boundaries
+NewsFlow is built around the idea that responsible editorial work depends on more than writing speed. It depends on structured evidence, reviewable judgment, role-based handoff, explicit approval, risk awareness, and a visible correction loop. The goal is not to replace editorial decision-making, but to make the surrounding workflow easier to organize, inspect, and improve.
 
-This release is best understood as a high-fidelity prototype.
+## What is included
+
+This release includes:
+
+- a FastAPI backend with workflow-oriented API modules
+- a React + TypeScript frontend for dashboard, event, Story Packet, review, and sign-off flows
+- core objects such as `EventCase`, `StoryPacket`, `ClaimCard`, `EvidencePack`, `ApprovalTask`, `DecisionLog`, and `CorrectionTicket`
+- agent-oriented modules across intake, cognition, governance, production, orchestration, and post-publication monitoring
+- environment variable examples for self-hosting
+- open-source documentation for contribution, security, setup, maintenance, and release management
+- GitHub issue templates, pull request template, CI workflow, Dependabot configuration, and CODEOWNERS
+
+## What NewsFlow is designed to explore
+
+NewsFlow is not only an AI writing interface. It explores AI-assisted workflow design for high-responsibility editorial environments.
+
+The project focuses on:
+
+- event-centered newsroom coordination
+- evidence and claim organization before drafting
+- human-in-the-loop approval checkpoints
+- traceable decision logs and override reasons
+- risk review before publication
+- correction tickets and post-publication follow-up
+- practical boundaries between AI assistance and human accountability
+
+## Current status
+
+This release should be understood as a high-fidelity prototype.
 
 It is suitable for:
 
-- product exploration
-- research demos
-- teaching and discussion around editorial workflow design
-- secondary development by teams interested in newsroom tooling
+- self-hosted exploration
+- classroom or research demonstrations
+- product thinking around newsroom workflow systems
+- secondary development by teams interested in editorial tooling
+- experiments around responsible human-AI collaboration
 
 It is not yet positioned as a production-ready newsroom platform.
 
-## Known gaps
+## Self-hosting
 
-- permissions and governance depth still need work
-- evidence anchors and citation mapping can be more granular
-- long-term memory handling needs stronger controls
-- deployment and operations docs can be expanded further
+Start with:
 
-## Suggested release title
+```text
+docs/SELF_HOSTING.md
+```
 
-`NewsFlow OSS v0.1.0 — Initial public release`
+Recommended local versions:
 
-## Suggested announcement copy
+- Python `3.12` or `3.13`
+- Node.js `20.19+`
+- Docker / Docker Compose for local infrastructure
 
-NewsFlow OSS v0.1.0 is now public.
+## Known limitations
 
-This project is not centered on AI writing alone. It is a newsroom workflow system for event tracking, evidence organization, approval chains, correction handling, and post-publication monitoring. The goal is to explore how AI can support high-responsibility editorial work without washing out judgment and accountability.
+The current release still has important boundaries:
+
+- permissions and organization-level governance can be more granular
+- evidence anchors and citation mapping need deeper implementation
+- long-term memory and source-protection governance need stronger controls
+- deployment and operations guidance can be expanded
+- some advanced agent behavior may require configured LLM credentials and local services
+
+## Security and privacy note
+
+Do not use public demo deployments for real newsroom source-protection data, unpublished reporting notes, real personal contact information, or internal approval history.
+
+If you discover a security issue, please follow `SECURITY.md` instead of opening a public issue.
+
+## Repository setup after release
+
+Recommended next steps for maintainers:
+
+- fill in the repository About section using `docs/GITHUB_PAGE_SETUP.md`
+- upload `image/newsflow-social-preview.svg` as the GitHub social preview image
+- enable branch protection for `main`
+- enable Dependabot security alerts
+- keep release notes and setup docs aligned with future changes
+
+## Closing note
+
+NewsFlow is an attempt to treat AI in journalism less as a shortcut for producing text and more as an infrastructure layer for organizing judgment, evidence, accountability, and collaboration.
+
+That is the direction this first public release opens up.

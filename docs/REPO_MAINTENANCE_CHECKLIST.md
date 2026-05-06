@@ -26,7 +26,7 @@ Use this checklist after the initial open-source launch to keep the repository i
 ## Security and privacy
 
 - never commit real API keys or live database URLs
-- never add teacher-facing or private course submission materials into this public repository
+- never add private academic submission materials into this public repository
 - review deployment manifests before every public push
 - keep `SECURITY.md` current if your reporting process changes
 

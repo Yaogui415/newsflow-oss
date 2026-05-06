@@ -11,7 +11,9 @@ const GOLD_BORDER = 'rgba(212,168,83,0.25)'
 const BG_INPUT = '#1A1A1A'
 const TEXT_MUTED = 'rgba(245,245,245,0.35)'
 
-const BACKEND_DIRECT = 'https://newsflow-api-2cd4.onrender.com/api/v1'
+const configuredApiBase = import.meta.env.VITE_BACKEND_DIRECT_URL || import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1'
+const BACKEND_DIRECT = configuredApiBase.replace(/\/$/, '')
+const BACKEND_HEALTH_URL = import.meta.env.VITE_BACKEND_HEALTH_URL || BACKEND_DIRECT.replace(/\/api\/v1\/?$/, '/health')
 
 // 直连后端的登录（绕过 Vercel 代理，避免代理超时）
 const directLogin = async (username: string, password: string) => {
@@ -46,7 +48,7 @@ export default function LoginPage() {
       setWarmupSeconds(Math.floor((Date.now() - startTime) / 1000))
     }, 1000)
 
-    const healthUrl = 'https://newsflow-api-2cd4.onrender.com/health'
+    const healthUrl = BACKEND_HEALTH_URL
     const maxAttempts = 12  // 最多尝试12次 x 10秒 = 2分钟
     for (let i = 0; i < maxAttempts; i++) {
       try {

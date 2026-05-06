@@ -192,6 +192,7 @@ npm run dev
 ### 6. Notes
 
 - frontend uses `VITE_API_BASE_URL` to connect to the backend
+- login warmup/fallback can also use `VITE_BACKEND_DIRECT_URL` and `VITE_BACKEND_HEALTH_URL`
 - default local API URL is `http://localhost:8000/api/v1`
 - set `OPENAI_API_KEY` in `backend/.env` if you want to enable LLM-backed features
 
@@ -264,6 +265,8 @@ npm run dev
 - `docs/OPEN_SOURCE_GUIDE.md` — open-source packaging notes
 - `docs/GITHUB_ABOUT.md` — repository description and public-facing copy
 - `docs/RELEASE_v0.1.0.md` — first public release notes
+- `docs/GITHUB_PAGE_SETUP.md` — final GitHub page copy and launch checklist
+- `docs/PUBLICATION_AUDIT.md` — public-release scope and sensitive-info audit
 - `docs/SELF_HOSTING.md` — self-hosting and deployment guidance
 
 ## Maintainer notes
