@@ -20,7 +20,7 @@ pydantic-settings>=2.3.0
 # Agent / LLM
 langgraph>=0.2.0
 langchain-core>=0.3.0
-langchain-openai>=0.2.0
+langchain-openai>=1.2.1
 litellm>=1.50.0
 
 # NLP / PII Detection
