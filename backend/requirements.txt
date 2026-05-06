@@ -17,7 +17,7 @@ pydantic-settings>=2.3.0
 
 # Agent / LLM
 langchain-core>=0.3.0
-langchain-openai>=0.2.0
+langchain-openai>=1.2.1
 
 # File Processing
 python-docx==1.1.2
