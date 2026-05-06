@@ -46,7 +46,7 @@ Enable these if available:
 Upload this file in GitHub repository settings:
 
 ```text
-image/newsflow-social-preview.svg
+image/newsflow-social-preview.png
 ```
 
 Path in GitHub:

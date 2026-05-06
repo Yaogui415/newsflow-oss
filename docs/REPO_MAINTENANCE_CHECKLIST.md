@@ -6,7 +6,7 @@ Use this checklist after the initial open-source launch to keep the repository i
 
 - fill in the repository About description using `docs/GITHUB_ABOUT.md`
 - add the recommended Topics
-- upload `image/newsflow-social-preview.svg` as the social preview image
+- upload `image/newsflow-social-preview.png` as the social preview image
 - publish a first Release using `docs/RELEASE_v0.1.0.md`
 
 ## Branch and review hygiene

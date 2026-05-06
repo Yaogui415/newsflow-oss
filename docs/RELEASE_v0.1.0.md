@@ -87,7 +87,7 @@ If you discover a security issue, please follow `SECURITY.md` instead of opening
 Recommended next steps for maintainers:
 
 - fill in the repository About section using `docs/GITHUB_PAGE_SETUP.md`
-- upload `image/newsflow-social-preview.svg` as the GitHub social preview image
+- upload `image/newsflow-social-preview.png` as the GitHub social preview image
 - enable branch protection for `main`
 - enable Dependabot security alerts
 - keep release notes and setup docs aligned with future changes

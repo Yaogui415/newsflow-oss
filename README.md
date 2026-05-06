@@ -273,7 +273,7 @@ npm run dev
 
 If you want this repository to feel complete on GitHub, the next good steps are:
 
-- upload `image/newsflow-social-preview.svg` as the GitHub social preview image
+- upload `image/newsflow-social-preview.png` as the GitHub social preview image
 - copy the text from `docs/GITHUB_ABOUT.md` into the repository About section
 - publish a first Release using `docs/RELEASE_v0.1.0.md`
 - follow `docs/REPO_MAINTENANCE_CHECKLIST.md` for branch protection, issue hygiene, and release upkeep
