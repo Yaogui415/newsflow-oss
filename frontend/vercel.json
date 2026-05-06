@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/api/health", "destination": "https://newsflow-api-2cd4.onrender.com/health" },
+    { "source": "/api/:path*", "destination": "https://newsflow-api-2cd4.onrender.com/api/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

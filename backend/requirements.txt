@@ -1,0 +1,33 @@
+# Web Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# Database（PostgreSQL via Neon + SQLite 本地开发兼容）
+sqlalchemy[asyncio]>=2.0.30
+asyncpg>=0.30.0
+aiosqlite>=0.20.0
+
+# Auth
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+bcrypt==4.0.1
+pydantic[email]>=2.8.0
+pydantic-settings>=2.3.0
+
+# Agent / LLM
+langchain-core>=0.3.0
+langchain-openai>=0.2.0
+
+# File Processing
+python-docx==1.1.2
+pdfplumber==0.11.4
+
+# Utilities
+httpx==0.28.1
+python-dateutil==2.9.0
+orjson==3.10.12
+feedparser>=6.0.0
+
+# Production
+gunicorn==22.0.0

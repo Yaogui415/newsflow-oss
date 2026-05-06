@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0A0A0A;
+  color: #F5F5F5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Problem 6: placeholder text visible on dark backgrounds */
+.ant-input::placeholder,
+.ant-select-selection-placeholder {
+  color: rgba(245, 245, 245, 0.35) !important;
+}
+
+.ant-modal .ant-modal-content,
+.ant-modal .ant-modal-header,
+.ant-modal .ant-modal-footer,
+.ant-select-dropdown,
+.ant-dropdown,
+.ant-popover .ant-popover-inner,
+.ant-tooltip .ant-tooltip-inner,
+.ant-picker-dropdown,
+.ant-message-notice .ant-message-notice-content {
+  background: #141414 !important;
+  color: #F5F5F5 !important;
+  border-color: rgba(212, 168, 83, 0.18) !important;
+}
+
+.ant-modal .ant-modal-title,
+.ant-modal-confirm-title,
+.ant-modal-confirm-content,
+.ant-form-item-label > label,
+.ant-select-item,
+.ant-select-item-option-content,
+.ant-empty-description,
+.ant-picker-header-view,
+.ant-picker-content,
+.ant-picker-cell,
+.ant-message-custom-content {
+  color: #F5F5F5 !important;
+}
+
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-input-number,
+.ant-input-number-input,
+.ant-select-selector,
+.ant-picker,
+.ant-btn-default,
+.ant-btn-color-default,
+.ant-btn-variant-outlined,
+.ant-btn-variant-dashed {
+  background: #141414 !important;
+  color: rgba(245, 245, 245, 0.88) !important;
+  border-color: rgba(212, 168, 83, 0.18) !important;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused,
+.ant-select-focused .ant-select-selector,
+.ant-picker-focused,
+.ant-input-number-focused {
+  box-shadow: 0 0 0 2px rgba(212, 168, 83, 0.12) !important;
+  border-color: rgba(212, 168, 83, 0.35) !important;
+}
+
+.ant-select-arrow,
+.ant-picker-suffix,
+.ant-picker-prev-icon,
+.ant-picker-next-icon,
+.ant-picker-super-prev-icon,
+.ant-picker-super-next-icon {
+  color: rgba(245, 245, 245, 0.65) !important;
+}
+
+.ant-select-item-option-selected,
+.ant-select-item-option-active,
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  background: rgba(212, 168, 83, 0.18) !important;
+}
