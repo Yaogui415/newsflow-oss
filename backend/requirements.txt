@@ -11,7 +11,7 @@ aiosqlite>=0.20.0
 # Auth
 python-jose[cryptography]>=3.3.0
 passlib[bcrypt]>=1.7.4
-bcrypt==4.0.1
+bcrypt==5.0.0
 pydantic[email]>=2.8.0
 pydantic-settings>=2.3.0
 
